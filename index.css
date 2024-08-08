@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #060606;
+}
+
+h1, h2 {
+    color: #4e7e40;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #312e2e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: 20px;
+}
+.map-container {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 40px;
+    
+
+}
+.img-container {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #383636;
+    padding: 20px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  
+  .footer-content {
+    max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+  }
+  
+  .footer-copyright {
+    font-size: 12px; /* Tamaño de fuente más pequeño */
+    color: #555;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-link {
+    font-size: 14px; /* Tamaño de fuente para los enlaces */
+    color: rgb(117, 184, 99);
+    text-decoration: none;
+    margin-right: 20px; /* Espaciado entre los enlaces */
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline; /* Subraya los enlaces al pasar el cursor sobre ellos */
+  }

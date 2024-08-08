@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2695d116f9874f45a16c4a55b28fa9d9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2695d116f9874f45a16c4a55b28fa9d9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2695d116f9874f45a16c4a55b28fa9d9 = L.map(
+                "map_2695d116f9874f45a16c4a55b28fa9d9",
+                {
+                    center: [4.15, -74.08],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9bd95f16b65030e315ad1164fc253965 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9bd95f16b65030e315ad1164fc253965.addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+            var marker_f9d810157a1d729e6f395e8b042405ac = L.marker(
+                [2.48, -72.41],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_7847ce2eb41f13a9eeca0bec15e2c2a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4838cc79507a88a24f8561c27394529c = $(`<div id="html_4838cc79507a88a24f8561c27394529c" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_7847ce2eb41f13a9eeca0bec15e2c2a5.setContent(html_4838cc79507a88a24f8561c27394529c);
+            
+        
+
+        marker_f9d810157a1d729e6f395e8b042405ac.bindPopup(popup_7847ce2eb41f13a9eeca0bec15e2c2a5)
+        ;
+
+        
+    
+    
+            var marker_d4631172148de7ebd1e4f14693fa723f = L.marker(
+                [2.45, -71.51],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_300fbb9844d7184bb92f39ef629f5469 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32232994feb753f5b812ce6dde5596fb = $(`<div id="html_32232994feb753f5b812ce6dde5596fb" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_300fbb9844d7184bb92f39ef629f5469.setContent(html_32232994feb753f5b812ce6dde5596fb);
+            
+        
+
+        marker_d4631172148de7ebd1e4f14693fa723f.bindPopup(popup_300fbb9844d7184bb92f39ef629f5469)
+        ;
+
+        
+    
+    
+            var marker_10dde005526bf094310161b9f6cb8222 = L.marker(
+                [2.22, -72.12],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_23fa2e79d112cd88c65e8f512edfe1c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_385173b68f26b77fdeeb0ee3a1b6ab9f = $(`<div id="html_385173b68f26b77fdeeb0ee3a1b6ab9f" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_23fa2e79d112cd88c65e8f512edfe1c6.setContent(html_385173b68f26b77fdeeb0ee3a1b6ab9f);
+            
+        
+
+        marker_10dde005526bf094310161b9f6cb8222.bindPopup(popup_23fa2e79d112cd88c65e8f512edfe1c6)
+        ;
+
+        
+    
+    
+            var marker_b98bcc62718851b7f856247029b39a73 = L.marker(
+                [2.21, -73.35],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_a901f89e745ba6d3cec5559bffce8a75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6621a3f1f5ad04b5258e39bb2611b2d8 = $(`<div id="html_6621a3f1f5ad04b5258e39bb2611b2d8" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_a901f89e745ba6d3cec5559bffce8a75.setContent(html_6621a3f1f5ad04b5258e39bb2611b2d8);
+            
+        
+
+        marker_b98bcc62718851b7f856247029b39a73.bindPopup(popup_a901f89e745ba6d3cec5559bffce8a75)
+        ;
+
+        
+    
+    
+            var marker_89eb085eef2ab4f72968a8f40392a85e = L.marker(
+                [2.22, -73.1],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_af91c9a6de5b1b4c64c095af8c6989e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83cdb618595ecb4ced7b6ebb9d92b1ed = $(`<div id="html_83cdb618595ecb4ced7b6ebb9d92b1ed" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_af91c9a6de5b1b4c64c095af8c6989e3.setContent(html_83cdb618595ecb4ced7b6ebb9d92b1ed);
+            
+        
+
+        marker_89eb085eef2ab4f72968a8f40392a85e.bindPopup(popup_af91c9a6de5b1b4c64c095af8c6989e3)
+        ;
+
+        
+    
+    
+            var marker_b726d0140a9447cb6896245ecef37469 = L.marker(
+                [2.21, -72.17],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_49c9f258107a99e3e86336aaa425a459 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0bc16bb453cf67d6120df04628c9ae10 = $(`<div id="html_0bc16bb453cf67d6120df04628c9ae10" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_49c9f258107a99e3e86336aaa425a459.setContent(html_0bc16bb453cf67d6120df04628c9ae10);
+            
+        
+
+        marker_b726d0140a9447cb6896245ecef37469.bindPopup(popup_49c9f258107a99e3e86336aaa425a459)
+        ;
+
+        
+    
+    
+            var marker_22cbc01ad42ab767a3f2559ca5edc237 = L.marker(
+                [2.22, -72.24],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_0eab987f39fafaa1b195318596b6aa56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acbbbd837a803cae42f46b340bddb79c = $(`<div id="html_acbbbd837a803cae42f46b340bddb79c" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_0eab987f39fafaa1b195318596b6aa56.setContent(html_acbbbd837a803cae42f46b340bddb79c);
+            
+        
+
+        marker_22cbc01ad42ab767a3f2559ca5edc237.bindPopup(popup_0eab987f39fafaa1b195318596b6aa56)
+        ;
+
+        
+    
+    
+            var marker_bcdea468fecea1036665504c7ff76538 = L.marker(
+                [2.39, -73.33],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_04c8f1606007c98968f434667d33474f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b862b838cece085f8a575891370a98d = $(`<div id="html_3b862b838cece085f8a575891370a98d" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_04c8f1606007c98968f434667d33474f.setContent(html_3b862b838cece085f8a575891370a98d);
+            
+        
+
+        marker_bcdea468fecea1036665504c7ff76538.bindPopup(popup_04c8f1606007c98968f434667d33474f)
+        ;
+
+        
+    
+    
+            var marker_1decd8b9135b1eff93c5562c8daebc42 = L.marker(
+                [2.48, -72.41],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_f887a8a11b7c19c4148a3b8505305d22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9dadc46f5ec98df9cf30226316c32e77 = $(`<div id="html_9dadc46f5ec98df9cf30226316c32e77" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_f887a8a11b7c19c4148a3b8505305d22.setContent(html_9dadc46f5ec98df9cf30226316c32e77);
+            
+        
+
+        marker_1decd8b9135b1eff93c5562c8daebc42.bindPopup(popup_f887a8a11b7c19c4148a3b8505305d22)
+        ;
+
+        
+    
+    
+            var marker_c5365a3c48b641780bac0f2e0582b39b = L.marker(
+                [2.45, -71.51],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_eb2359f36af0ca9b14c9ec2a802d5c4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba83a66f6832b02f266c0246ac108905 = $(`<div id="html_ba83a66f6832b02f266c0246ac108905" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_eb2359f36af0ca9b14c9ec2a802d5c4a.setContent(html_ba83a66f6832b02f266c0246ac108905);
+            
+        
+
+        marker_c5365a3c48b641780bac0f2e0582b39b.bindPopup(popup_eb2359f36af0ca9b14c9ec2a802d5c4a)
+        ;
+
+        
+    
+    
+            var marker_5ba7bff279e5debdf642b6f623f8fb89 = L.marker(
+                [2.22, -72.12],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_0ca4a829bd2bcfceafa33f74fb1b5b1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc81bb3e1978dc46a3268677ca37e3ff = $(`<div id="html_dc81bb3e1978dc46a3268677ca37e3ff" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_0ca4a829bd2bcfceafa33f74fb1b5b1d.setContent(html_dc81bb3e1978dc46a3268677ca37e3ff);
+            
+        
+
+        marker_5ba7bff279e5debdf642b6f623f8fb89.bindPopup(popup_0ca4a829bd2bcfceafa33f74fb1b5b1d)
+        ;
+
+        
+    
+    
+            var marker_2a82f344122073765137ec1c45537ff8 = L.marker(
+                [2.21, -73.35],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_8d623e3986d9b87994ffdbe34654daf6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9b03873bcc0b680ada3190ef3e74c4f = $(`<div id="html_f9b03873bcc0b680ada3190ef3e74c4f" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_8d623e3986d9b87994ffdbe34654daf6.setContent(html_f9b03873bcc0b680ada3190ef3e74c4f);
+            
+        
+
+        marker_2a82f344122073765137ec1c45537ff8.bindPopup(popup_8d623e3986d9b87994ffdbe34654daf6)
+        ;
+
+        
+    
+    
+            var marker_9e04d7899bc4f60974947011fc4ee421 = L.marker(
+                [2.22, -73.1],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_6c0dd984cde2e47222f2b155df086a14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6f126fd95dc75269b34564601f7264f = $(`<div id="html_f6f126fd95dc75269b34564601f7264f" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_6c0dd984cde2e47222f2b155df086a14.setContent(html_f6f126fd95dc75269b34564601f7264f);
+            
+        
+
+        marker_9e04d7899bc4f60974947011fc4ee421.bindPopup(popup_6c0dd984cde2e47222f2b155df086a14)
+        ;
+
+        
+    
+    
+            var marker_0ebc411fc9b273f9c5e17c4f03f7f1de = L.marker(
+                [2.21, -72.17],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_7311db395e705cc4635cbb0211422a09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba950481318ab7286f2998913ef1a446 = $(`<div id="html_ba950481318ab7286f2998913ef1a446" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_7311db395e705cc4635cbb0211422a09.setContent(html_ba950481318ab7286f2998913ef1a446);
+            
+        
+
+        marker_0ebc411fc9b273f9c5e17c4f03f7f1de.bindPopup(popup_7311db395e705cc4635cbb0211422a09)
+        ;
+
+        
+    
+    
+            var marker_a89c8177a7c8fe1054c45c5afbeb3239 = L.marker(
+                [2.22, -72.24],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_da18e754593ad59d2a0cce534849e808 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7aac9054b26d794d9bde0f4d9d484244 = $(`<div id="html_7aac9054b26d794d9bde0f4d9d484244" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_da18e754593ad59d2a0cce534849e808.setContent(html_7aac9054b26d794d9bde0f4d9d484244);
+            
+        
+
+        marker_a89c8177a7c8fe1054c45c5afbeb3239.bindPopup(popup_da18e754593ad59d2a0cce534849e808)
+        ;
+
+        
+    
+    
+            var marker_b3336f25cc3026867553cedafe4f18ab = L.marker(
+                [2.39, -73.33],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_aba8417290d5becb4f89fed03a23e3fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3a7315ef150ceb4a14e212394b7ed55 = $(`<div id="html_c3a7315ef150ceb4a14e212394b7ed55" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_aba8417290d5becb4f89fed03a23e3fd.setContent(html_c3a7315ef150ceb4a14e212394b7ed55);
+            
+        
+
+        marker_b3336f25cc3026867553cedafe4f18ab.bindPopup(popup_aba8417290d5becb4f89fed03a23e3fd)
+        ;
+
+        
+    
+    
+            var marker_ca2e99d6f5f3cab0855e5c9438ea1cab = L.marker(
+                [2.48, -72.41],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_c98ffa919b083dc9b44d09b37d69cd0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3fc2bd01d41a3bcbea09f542abfbec1 = $(`<div id="html_c3fc2bd01d41a3bcbea09f542abfbec1" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_c98ffa919b083dc9b44d09b37d69cd0a.setContent(html_c3fc2bd01d41a3bcbea09f542abfbec1);
+            
+        
+
+        marker_ca2e99d6f5f3cab0855e5c9438ea1cab.bindPopup(popup_c98ffa919b083dc9b44d09b37d69cd0a)
+        ;
+
+        
+    
+    
+            var marker_63319c4be9cecb1210582eb8a18dd9bf = L.marker(
+                [2.45, -71.51],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_e77c4bce3f401db23db947fd1584209d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49a54c473742e2b46b8769cca0f58073 = $(`<div id="html_49a54c473742e2b46b8769cca0f58073" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_e77c4bce3f401db23db947fd1584209d.setContent(html_49a54c473742e2b46b8769cca0f58073);
+            
+        
+
+        marker_63319c4be9cecb1210582eb8a18dd9bf.bindPopup(popup_e77c4bce3f401db23db947fd1584209d)
+        ;
+
+        
+    
+    
+            var marker_ddab5b731450344f97d29a2e87010dd3 = L.marker(
+                [2.22, -72.12],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_1f4e93b6fc10ff5009a0fb879496345d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7425b624922a3818e8730fca85e967f4 = $(`<div id="html_7425b624922a3818e8730fca85e967f4" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_1f4e93b6fc10ff5009a0fb879496345d.setContent(html_7425b624922a3818e8730fca85e967f4);
+            
+        
+
+        marker_ddab5b731450344f97d29a2e87010dd3.bindPopup(popup_1f4e93b6fc10ff5009a0fb879496345d)
+        ;
+
+        
+    
+    
+            var marker_aa414f5a474dc23ec6fae642f3f17466 = L.marker(
+                [2.21, -73.35],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_2c205050a2995adea57e54b2dbbe6297 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fc62f84600d5f81a522cd1a086f3b68 = $(`<div id="html_0fc62f84600d5f81a522cd1a086f3b68" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_2c205050a2995adea57e54b2dbbe6297.setContent(html_0fc62f84600d5f81a522cd1a086f3b68);
+            
+        
+
+        marker_aa414f5a474dc23ec6fae642f3f17466.bindPopup(popup_2c205050a2995adea57e54b2dbbe6297)
+        ;
+
+        
+    
+    
+            var marker_c768e15ac0f0a2c77c8cb50118c5cb5b = L.marker(
+                [2.22, -73.1],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_4e47ce2e8f8227f61efabd9ee80f4157 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1cc8bce1b4b1735b14dc6d3047ca5b14 = $(`<div id="html_1cc8bce1b4b1735b14dc6d3047ca5b14" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_4e47ce2e8f8227f61efabd9ee80f4157.setContent(html_1cc8bce1b4b1735b14dc6d3047ca5b14);
+            
+        
+
+        marker_c768e15ac0f0a2c77c8cb50118c5cb5b.bindPopup(popup_4e47ce2e8f8227f61efabd9ee80f4157)
+        ;
+
+        
+    
+    
+            var marker_681bb64b0eceb5351612dc89ed6b8cbc = L.marker(
+                [2.21, -72.17],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_651ae7d3a5e134718ab0966e4d700a7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de542d497ddd0a64c2d82e1c78749ed3 = $(`<div id="html_de542d497ddd0a64c2d82e1c78749ed3" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_651ae7d3a5e134718ab0966e4d700a7f.setContent(html_de542d497ddd0a64c2d82e1c78749ed3);
+            
+        
+
+        marker_681bb64b0eceb5351612dc89ed6b8cbc.bindPopup(popup_651ae7d3a5e134718ab0966e4d700a7f)
+        ;
+
+        
+    
+    
+            var marker_5960b5c8b16f92126a9a1e4e297b80eb = L.marker(
+                [2.22, -72.24],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_1ebcff5c841eeafe37187d7a5d8caa86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccae9254f1173e0019c57681986b2659 = $(`<div id="html_ccae9254f1173e0019c57681986b2659" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_1ebcff5c841eeafe37187d7a5d8caa86.setContent(html_ccae9254f1173e0019c57681986b2659);
+            
+        
+
+        marker_5960b5c8b16f92126a9a1e4e297b80eb.bindPopup(popup_1ebcff5c841eeafe37187d7a5d8caa86)
+        ;
+
+        
+    
+    
+            var marker_034028abc0709c2e3ad6980591a6d4ed = L.marker(
+                [2.39, -73.33],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_c2ed73f8c60320c01f89ed66a832f14a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97fdfc241e5023e433bb1e98c0449abb = $(`<div id="html_97fdfc241e5023e433bb1e98c0449abb" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_c2ed73f8c60320c01f89ed66a832f14a.setContent(html_97fdfc241e5023e433bb1e98c0449abb);
+            
+        
+
+        marker_034028abc0709c2e3ad6980591a6d4ed.bindPopup(popup_c2ed73f8c60320c01f89ed66a832f14a)
+        ;
+
+        
+    
+    
+            var marker_95a6a0c717c3820f5d26dfde360f8ef1 = L.marker(
+                [2.48, -72.41],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_b73bc4390f7f0ef033b79802476208f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e50725cedd24f00e7db5ba61cef32555 = $(`<div id="html_e50725cedd24f00e7db5ba61cef32555" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_b73bc4390f7f0ef033b79802476208f8.setContent(html_e50725cedd24f00e7db5ba61cef32555);
+            
+        
+
+        marker_95a6a0c717c3820f5d26dfde360f8ef1.bindPopup(popup_b73bc4390f7f0ef033b79802476208f8)
+        ;
+
+        
+    
+    
+            var marker_35d53ec90436ad6f87c8760b347bfd66 = L.marker(
+                [2.45, -71.51],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_0c97677b65d26ce4a9d720547a6eab96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c1e4d33944360dfd7049e37c5be546c = $(`<div id="html_8c1e4d33944360dfd7049e37c5be546c" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_0c97677b65d26ce4a9d720547a6eab96.setContent(html_8c1e4d33944360dfd7049e37c5be546c);
+            
+        
+
+        marker_35d53ec90436ad6f87c8760b347bfd66.bindPopup(popup_0c97677b65d26ce4a9d720547a6eab96)
+        ;
+
+        
+    
+    
+            var marker_b0577326b7118f1c8a96c0b95b67d4a4 = L.marker(
+                [2.22, -72.12],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_ba60e4fe63aa5b8018ac5a369f84bfff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33b4ce29ac414a987b78c722efee30e6 = $(`<div id="html_33b4ce29ac414a987b78c722efee30e6" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_ba60e4fe63aa5b8018ac5a369f84bfff.setContent(html_33b4ce29ac414a987b78c722efee30e6);
+            
+        
+
+        marker_b0577326b7118f1c8a96c0b95b67d4a4.bindPopup(popup_ba60e4fe63aa5b8018ac5a369f84bfff)
+        ;
+
+        
+    
+    
+            var marker_54a7943f8242c04081d659758a197910 = L.marker(
+                [2.21, -73.35],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_75b1c3a6b88fb794e555a46726dcf3f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02f3944cf2ca75b2ba5c78f668c6fe63 = $(`<div id="html_02f3944cf2ca75b2ba5c78f668c6fe63" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_75b1c3a6b88fb794e555a46726dcf3f3.setContent(html_02f3944cf2ca75b2ba5c78f668c6fe63);
+            
+        
+
+        marker_54a7943f8242c04081d659758a197910.bindPopup(popup_75b1c3a6b88fb794e555a46726dcf3f3)
+        ;
+
+        
+    
+    
+            var marker_5a6743712680f2b96c6784d7f255f54b = L.marker(
+                [2.22, -73.1],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_da2f538876de5a8357fa066ce7339adc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50d94b86fd12155643ae568161401db3 = $(`<div id="html_50d94b86fd12155643ae568161401db3" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_da2f538876de5a8357fa066ce7339adc.setContent(html_50d94b86fd12155643ae568161401db3);
+            
+        
+
+        marker_5a6743712680f2b96c6784d7f255f54b.bindPopup(popup_da2f538876de5a8357fa066ce7339adc)
+        ;
+
+        
+    
+    
+            var marker_ff3ff1f41b2a33518732237cb8c7de12 = L.marker(
+                [2.21, -72.17],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_858d518b34a1c3739f141474718300b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77595b83970409ea46edfd5ee24528ba = $(`<div id="html_77595b83970409ea46edfd5ee24528ba" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_858d518b34a1c3739f141474718300b7.setContent(html_77595b83970409ea46edfd5ee24528ba);
+            
+        
+
+        marker_ff3ff1f41b2a33518732237cb8c7de12.bindPopup(popup_858d518b34a1c3739f141474718300b7)
+        ;
+
+        
+    
+    
+            var marker_c6513a2d6e115f435869908a2f00a52d = L.marker(
+                [2.22, -72.24],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_7a1a661150ee24cdae27283dc2a56fcd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32a39d0b5fc7a649e31c9aa28724eed5 = $(`<div id="html_32a39d0b5fc7a649e31c9aa28724eed5" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_7a1a661150ee24cdae27283dc2a56fcd.setContent(html_32a39d0b5fc7a649e31c9aa28724eed5);
+            
+        
+
+        marker_c6513a2d6e115f435869908a2f00a52d.bindPopup(popup_7a1a661150ee24cdae27283dc2a56fcd)
+        ;
+
+        
+    
+    
+            var marker_eb938c869d492c6173f49166ff1eeef6 = L.marker(
+                [2.39, -73.33],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_3ccfbfe9743a5c55236b527514891654 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a301a8feb2fa9a4ecd541c6086fc042 = $(`<div id="html_8a301a8feb2fa9a4ecd541c6086fc042" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_3ccfbfe9743a5c55236b527514891654.setContent(html_8a301a8feb2fa9a4ecd541c6086fc042);
+            
+        
+
+        marker_eb938c869d492c6173f49166ff1eeef6.bindPopup(popup_3ccfbfe9743a5c55236b527514891654)
+        ;
+
+        
+    
+    
+            var marker_dc93208c40351f13af2d146a75695069 = L.marker(
+                [2.48, -72.41],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_1cc2e01b50ce2fb312e4219b75bf6040 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f76dd193ed32350881127161c3f64c3c = $(`<div id="html_f76dd193ed32350881127161c3f64c3c" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_1cc2e01b50ce2fb312e4219b75bf6040.setContent(html_f76dd193ed32350881127161c3f64c3c);
+            
+        
+
+        marker_dc93208c40351f13af2d146a75695069.bindPopup(popup_1cc2e01b50ce2fb312e4219b75bf6040)
+        ;
+
+        
+    
+    
+            var marker_96a4c5c18078c099e5a2693e33b6caf6 = L.marker(
+                [2.45, -71.51],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_5887b47fc0d6b8bace2d6d3af42af967 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afc7229062a4c9c051156e5c490279ed = $(`<div id="html_afc7229062a4c9c051156e5c490279ed" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_5887b47fc0d6b8bace2d6d3af42af967.setContent(html_afc7229062a4c9c051156e5c490279ed);
+            
+        
+
+        marker_96a4c5c18078c099e5a2693e33b6caf6.bindPopup(popup_5887b47fc0d6b8bace2d6d3af42af967)
+        ;
+
+        
+    
+    
+            var marker_94d63de1f8401326cb66f664cee7e7e6 = L.marker(
+                [2.22, -72.12],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_208fca38e97b7caf4cec390ac15e3fb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a7ab5642b84034a1dfa93dc3056584e = $(`<div id="html_2a7ab5642b84034a1dfa93dc3056584e" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_208fca38e97b7caf4cec390ac15e3fb5.setContent(html_2a7ab5642b84034a1dfa93dc3056584e);
+            
+        
+
+        marker_94d63de1f8401326cb66f664cee7e7e6.bindPopup(popup_208fca38e97b7caf4cec390ac15e3fb5)
+        ;
+
+        
+    
+    
+            var marker_ab0fa2018de30ba440e1772ab20ea1a2 = L.marker(
+                [2.21, -73.35],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_fcb93d89ed55c2a32cdacdeb1aa20c6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4bacffbace8dd2c5729889ba3aa01d4 = $(`<div id="html_e4bacffbace8dd2c5729889ba3aa01d4" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_fcb93d89ed55c2a32cdacdeb1aa20c6c.setContent(html_e4bacffbace8dd2c5729889ba3aa01d4);
+            
+        
+
+        marker_ab0fa2018de30ba440e1772ab20ea1a2.bindPopup(popup_fcb93d89ed55c2a32cdacdeb1aa20c6c)
+        ;
+
+        
+    
+    
+            var marker_d79a1ed69575e55b661db6b83f4d9ec8 = L.marker(
+                [2.22, -73.1],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_c3c1146179fb246096fac0f58b7c770d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50e2560f4aea615b5c08d7c86e2c906f = $(`<div id="html_50e2560f4aea615b5c08d7c86e2c906f" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_c3c1146179fb246096fac0f58b7c770d.setContent(html_50e2560f4aea615b5c08d7c86e2c906f);
+            
+        
+
+        marker_d79a1ed69575e55b661db6b83f4d9ec8.bindPopup(popup_c3c1146179fb246096fac0f58b7c770d)
+        ;
+
+        
+    
+    
+            var marker_ed2b6698a8a7b0bbcf6b6f72dd71e607 = L.marker(
+                [2.21, -72.17],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_71ab0287a07cb14394d5bd8cfcaee485 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_819d632806a80fdc2ce14009a99250f8 = $(`<div id="html_819d632806a80fdc2ce14009a99250f8" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_71ab0287a07cb14394d5bd8cfcaee485.setContent(html_819d632806a80fdc2ce14009a99250f8);
+            
+        
+
+        marker_ed2b6698a8a7b0bbcf6b6f72dd71e607.bindPopup(popup_71ab0287a07cb14394d5bd8cfcaee485)
+        ;
+
+        
+    
+    
+            var marker_d0a34d9953793e3db74673b8b1ec4300 = L.marker(
+                [2.22, -72.24],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_1b590f75527276f5b7dfb212b68bc0dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d2e36ce1f5c86f80099131de23ccb00 = $(`<div id="html_7d2e36ce1f5c86f80099131de23ccb00" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_1b590f75527276f5b7dfb212b68bc0dc.setContent(html_7d2e36ce1f5c86f80099131de23ccb00);
+            
+        
+
+        marker_d0a34d9953793e3db74673b8b1ec4300.bindPopup(popup_1b590f75527276f5b7dfb212b68bc0dc)
+        ;
+
+        
+    
+    
+            var marker_36ccdcb43c690d2e4e8c5e2b68cdc572 = L.marker(
+                [2.39, -73.33],
+                {}
+            ).addTo(map_2695d116f9874f45a16c4a55b28fa9d9);
+        
+    
+        var popup_1377bd20b6054815611278d4a669170d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bc2f6374b083f888bb9f57bea3936fd = $(`<div id="html_5bc2f6374b083f888bb9f57bea3936fd" style="width: 100.0%; height: 100.0%;">Área deforestada</div>`)[0];
+                popup_1377bd20b6054815611278d4a669170d.setContent(html_5bc2f6374b083f888bb9f57bea3936fd);
+            
+        
+
+        marker_36ccdcb43c690d2e4e8c5e2b68cdc572.bindPopup(popup_1377bd20b6054815611278d4a669170d)
+        ;
+
+        
+    
+</script>
+</html>
